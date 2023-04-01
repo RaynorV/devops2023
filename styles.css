@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #ccc;
+  background-color: #3a3a3a;
 }
 
 .container {
@@ -11,7 +11,7 @@ body {
   width: 50%;
   text-align: center;
   padding-top: 50px;
-  background-color: #ccc;
+  background-color: #3a3a3a;
 }
 
 h1 {
@@ -27,13 +27,14 @@ textarea {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: #FEDCBA; /* yellow */
+  border: 1px solid #3a3a3a;
+  background-color: #939393; /* yellow */
   color: #000;
 }
 
 #input-1 {
   flex-grow: 1;
+  font-size: 16px;
 }
 
 button {
@@ -52,19 +53,27 @@ button:hover {
 
 #input-2 {
   width: 100%;
-  height: 200px;
+  height: 350px;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #3a3a3a;
   resize: none;
-  background-color: #FEDCBA; /* yellow */
+  background-color: #939393; /* yellow */
   color: #000;
+  font-size: 18px;
 }
 
 #input-3 {
   margin-top: 20px;
   font-size: 18px;
   color: #666;
-  background-color: #FEDCBA; /* yellow */
+  background-color: #939393; /* yellow */
   color: #000;
+}
+
+#stars-gif {
+  margin: 3% auto 0;
+  width: 100%;
+  height: 324px;
+  vertical-align: middle;
 }
