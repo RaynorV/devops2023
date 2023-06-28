@@ -21,11 +21,13 @@ jobs:
       # my Testing the environment
       - name: Testing the environment
         run: |
-          git branch
-          pwd
-          sudo apt update
           sudo apt install nodejs -y
           nodejs --version
+          sudo apt install npm -y
+          sudo npm install pm2 -g
+          pm2 start server.js
+          curl http://localhost:8080
+          
 
 
 
