@@ -18,13 +18,15 @@ jobs:
       - name: check that everything is installed
         run: ls -la
         
-      # Runs making an Artifact
-      #- name: make tar archive
-        #run: |
-        #  tar cvf artifact.tar *
-        #  bzip2 artifact.tar
-        #  echo "${{ secrets.RSA_KEY_FOR_ANSIBLE_SERVER }}" > key.pem
-        #  chmod 600 key.pem
+      # my Testing the environment
+      - name: Testing the environment
+        run: |
+          git branch
+          pwd
+          sudo apt update
+          sudo apt install nodejs -y
+          nodejs --version
+
 
 
 
